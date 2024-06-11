@@ -6,15 +6,15 @@ This Solidity smart contract demonstrates different error handling techniques us
 Solidity version: 0.8.18
 
 # Contract Variables
-- sunny (boolean): Represents the current weather condition. Initialized to true.
-- raincoat (boolean): Indicates whether a raincoat is needed. Initialized to false.
-- finalCall (uint): Tracks the number of times the weather function has been called. Initialized to 0.
+- **sunny (boolean)**: Represents the current weather condition. Initialized to true.
+- **raincoat (boolean)**: Indicates whether a raincoat is needed. Initialized to false.
+- **finalCall (uint)**: Tracks the number of times the weather function has been called. Initialized to 0.
 
 # Contract Functions
-- weather(): Checks the weather condition and increments the finalCall count by 3. Throws an error if the weather is not sunny.
-- weatherChanger(): Toggles the value of the sunny variable to switch the weather condition.
-- getCal(): Retrieves the current value of finalCall.
-- BringRaincoat(): Checks the weather condition and sets the raincoat variable to true if it is not sunny. Otherwise, reverts with an error message indicating that no raincoat is needed.
+- **weather()**: Checks the weather condition and increments the finalCall count by 3. Throws an error if the weather is not sunny.
+- **weatherChanger()**: Toggles the value of the sunny variable to switch the weather condition.
+- **getCal()**: Retrieves the current value of finalCall.
+- **BringRaincoat()**: Checks the weather condition and sets the raincoat variable to true if it is not sunny. Otherwise, reverts with an error message indicating that no raincoat is needed.
 
 # License
 This code is released under the MIT License. You can find the full license text in the SPDX-License-Identifier comment at the beginning of the contract.

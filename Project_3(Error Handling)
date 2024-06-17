@@ -2,30 +2,30 @@
 pragma solidity ^0.8.18;
 
 contract ErrorHandling {
-    bool public rainy = true;
-    bool public raincoat = false;
+    bool public sunny = true;
+    bool public sunscreen = false;
     uint256 public finalCall = 0;
 
     function weather() public {
-        require(rainy, "THE WEATHER IS NOT RAINY TODAY.");
+        require(sunny, "IT IS NOT SUNNY TODAY!!");
         finalCall += 5;
 
         assert(finalCall != 0);
     }
 
     function weatherChanger() public {
-        rainy = !rainy;
+        sunny = !sunny;
     }
 
     function getFinalCall() public view returns (uint256) {
         return finalCall;
     }
 
-    function bringRaincoat() public {
-        if (rainy) {
-            raincoat = true;
+    function applySuncreen() public {
+        if (sunny) {
+            sunscreen = true;
         } else {
-            revert("NO RAINCOAT NEEDED");
+            revert("NO SUNSCREEN NEEDED");
         }
     }
 }

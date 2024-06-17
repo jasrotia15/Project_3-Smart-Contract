@@ -14,7 +14,7 @@ Solidity version: 0.8.18
 - **weather()**: Checks the weather condition and increments the finalCall count by 3. Throws an error if the weather is not sunny.
 - **weatherChanger()**: Toggles the value of the sunny variable to switch the weather condition.
 - **getCal()**: Retrieves the current value of finalCall.
-- **BringSuncreen()**: Checks the weather condition and sets the suncreen variable to true if it is not sunny. Otherwise, reverts with an error message indicating that no suncreen is needed.
+- **BringSuncreen()**: Checks the weather condition and sets the suncreen variable to true if it is sunny. Otherwise, reverts with an error message indicating that no suncreen is needed.
 
 # License
 This code is released under the MIT License. You can find the full license text in the SPDX-License-Identifier comment at the beginning of the contract.
